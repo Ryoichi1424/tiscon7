@@ -54,6 +54,7 @@ public class UserOrderForm {
 
     @NotNull(message = "どちらかを選択してください。")
     private boolean washingMachineInstallation;
+    private String distance2;
 
     public String getCustomerName() {
         return customerName;
@@ -150,4 +151,9 @@ public class UserOrderForm {
     public void setWashingMachineInstallation(boolean washingMachineInstallation) {
         this.washingMachineInstallation = washingMachineInstallation;
     }
+
+    public String getDistance2() {return distance2;}
+
+    public void setDistance2(String distance2) {this.distance2 = distance2;}
 }
+
