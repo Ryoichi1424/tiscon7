@@ -11,6 +11,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * 引越し見積もりのコントローラークラス。
@@ -159,7 +160,11 @@ public class EstimateController {
         BeanUtils.copyProperties(userOrderForm, dto);
         estimateService.registerOrder(dto);
 
-        return "complete";
+        return "redirect:/complete";
     }
 
+    @RequestMapping(value = "complete")
+    String redirect(){
+        return "complete";
+    }
 }
