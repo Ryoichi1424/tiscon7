@@ -54,7 +54,12 @@ public class UserOrderForm {
 
     @NotNull(message = "どちらかを選択してください。")
     private boolean washingMachineInstallation;
+
     private String distance2;
+
+    private String month;
+
+    private String day;
 
     public String getCustomerName() {
         return customerName;
@@ -153,7 +158,12 @@ public class UserOrderForm {
     }
 
     public String getDistance2() {return distance2;}
-
     public void setDistance2(String distance2) {this.distance2 = distance2;}
+
+    public String getMonth() {return month;}
+    public void setMonth(String month) {this.month = month;}
+
+    public String getDay() {return day;}
+    public void setDay(String day) {this.day = day;}
 }
 

@@ -28,6 +28,10 @@ public class UserOrderDto {
 
     private String distance2;
 
+    private String month;
+
+    private String day;
+
     public String getCustomerName() {
         return customerName;
     }
@@ -125,4 +129,11 @@ public class UserOrderDto {
     }
     public int getDistance2(){return Integer.parseInt(distance2);}
     public void setDistance2(String distance2){this.distance2=distance2;}
+
+    public int getMonth(){return Integer.parseInt(month);}
+    public void setMonth(String month){this.month=month;}
+
+    public int getDay(){return Integer.parseInt(day);}
+    public void setDay(String day){this.day=day;}
+
 }
