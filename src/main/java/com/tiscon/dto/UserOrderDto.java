@@ -26,6 +26,8 @@ public class UserOrderDto {
 
     private boolean washingMachineInstallation;
 
+    private String distance2;
+
     public String getCustomerName() {
         return customerName;
     }
@@ -121,4 +123,6 @@ public class UserOrderDto {
     public void setWashingMachineInstallation(Boolean washingMachineInstallation) {
         this.washingMachineInstallation = washingMachineInstallation;
     }
+    public int getDistance2(){return Integer.parseInt(distance2);}
+    public void setDistance2(String distance2){this.distance2=distance2;}
 }
