@@ -55,10 +55,13 @@ public class UserOrderForm {
     @NotNull(message = "どちらかを選択してください。")
     private boolean washingMachineInstallation;
 
+    @NotBlank(message = "引越し先までの距離を入力してください。")
     private String distance2;
 
+    @NotBlank(message = "引っ越し予定の月を入力してください。")
     private String month;
 
+    @NotBlank(message = "引っ越し予定の日を入力してください。")
     private String day;
 
     public String getCustomerName() {
