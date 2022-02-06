@@ -49,20 +49,20 @@
           <td><span th:text="*{email}"></span></td>
           <input type="hidden" name="email" id="email" th:value="*{email}"/>
         </tr>
-        </tbody>
+      </tbody>
       </table>
       <span class="text-danger"
             th:if="${#fields.hasErrors('customerName')}"
             th:errors="*{customerName}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('tel')}"
             th:errors="*{tel}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('email')}"
             th:errors="*{email}">
-      </span><br>
+      </span>
     </div>
     <div class="col-sm-12">
       <div class="sub-title">集荷元・お届け先</div>
@@ -82,7 +82,6 @@
           <td><span th:text="*{oldAddress}"></span></td>
           <input type="hidden" name="oldAddress" id="oldAddress" th:value="*{oldAddress}"/>
         </tr>
-
         <tr>
           <th>お届け先住所（都道府県）</th>
           <td>
@@ -90,7 +89,6 @@
           </td>
           <input type="hidden" name="newPrefectureId" id="newPrefectureId" th:value="*{newPrefectureId}"/>
         </tr>
-
         <tr>
           <th>お届け先住所（市区町村以下）</th>
           <td><span th:text="*{newAddress}"></span></td>
@@ -106,23 +104,23 @@
       <span class="text-danger"
             th:if="${#fields.hasErrors('oldPrefectureId')}"
             th:errors="*{oldPrefectureId}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('oldAddress')}"
             th:errors="*{oldAddress}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('newPrefectureId')}"
             th:errors="*{newPrefectureId}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('newAddress')}"
             th:errors="*{newAddress}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('distance2')}"
             th:errors="*{distance2}">
-      </span><br>
+      </span>
     </div>
 
     <div class="col-sm-12">
@@ -145,11 +143,11 @@
       <span class="text-danger"
             th:if="${#fields.hasErrors('month')}"
             th:errors="*{month}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('day')}"
             th:errors="*{day}">
-      </span><br>
+      </span>
 
     </div>
     <div class="col-sm-12">
@@ -189,23 +187,23 @@
       <span class="text-danger"
             th:if="${#fields.hasErrors('box')}"
             th:errors="*{box}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('bed')}"
             th:errors="*{bed}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('bicycle')}"
             th:errors="*{bicycle}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('washingMachine')}"
             th:errors="*{washingMachine}">
-      </span><br>
+      </span>
       <span class="text-danger"
             th:if="${#fields.hasErrors('washingMachineInstallation')}"
             th:errors="*{washingMachineInstallation}">
-      </span><br>
+      </span>
 
       <div class="form-group">
         <div class="text-center">
