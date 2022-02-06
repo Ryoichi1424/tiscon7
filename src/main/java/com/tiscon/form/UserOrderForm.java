@@ -13,46 +13,46 @@ import javax.validation.constraints.NotNull;
  */
 public class UserOrderForm {
 
-    @NotBlank
+    @NotBlank(message = "氏名を入力してください。")
     private String customerName;
 
-    @NotBlank
-    @Numeric
+    @NotBlank(message = "電話番号を入力してください。")
+    @Numeric(message = "電話番号を半角で入力してください。")
     private String tel;
 
     @Email
-    @NotBlank
+    @NotBlank(message = "メールアドレスを入力してください。")
     private String email;
 
-    @NotBlank
+    @NotBlank(message = "集荷元住所(都道府県)を入力してください。")
     private String oldPrefectureId;
 
-    @NotBlank
+    @NotBlank(message = "集荷元住所(市町村以下)を入力してください。")
     private String oldAddress;
 
-    @NotBlank
+    @NotBlank(message = "お届け先住所(都道府県)を入力してください。")
     private String newPrefectureId;
 
-    @NotBlank
+    @NotBlank(message = "お届け先住所(市町村以下)を入力してください。")
     private String newAddress;
 
-    @Numeric
-    @NotBlank
+    @Numeric(message = "ダンボールの個数を半角数字で入力してください。")
+    @NotBlank(message = "ダンボールの個数を入力してください。")
     private String box;
 
-    @Numeric
-    @NotBlank
+    @Numeric(message = "ベッドの個数を半角数字で入力してください。")
+    @NotBlank(message = "ベッドの個数を入力してください。")
     private String bed;
 
-    @Numeric
-    @NotBlank
+    @Numeric(message = "自転車の個数を半角数字で入力してください。")
+    @NotBlank(message = "自転車の個数を入力してください。")
     private String bicycle;
 
-    @Numeric
-    @NotBlank
+    @Numeric(message = "洗濯機の個数を半角数字で入力してください。")
+    @NotBlank(message = "洗濯機の個数を入力してください。")
     private String washingMachine;
 
-    @NotNull
+    @NotNull(message = "どちらかを選択してください。")
     private boolean washingMachineInstallation;
 
     public String getCustomerName() {
